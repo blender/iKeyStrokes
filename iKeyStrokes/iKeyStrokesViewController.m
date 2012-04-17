@@ -37,9 +37,9 @@
     else{
         
         [_iPhoneTextField becomeFirstResponder];
-        _iPhoneTextField.hidden = YES;
+        _iPhoneTextField.hidden = NO;
         _iPhoneTextField.delegate = self;
-        _iPhoneTextField.text = @"A";
+        //_iPhoneTextField.text = @"A";
     }
 
 }
@@ -109,7 +109,8 @@ replacementString:(NSString *)string {
         [self keyPressed:@""];
     }
     
-    return NO;
+    //[self.iPadTextView.text stringByReplacingCharactersInRange:range withString:string];
+    return YES;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

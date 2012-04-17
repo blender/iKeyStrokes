@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A32342A13BD997400AACF1A /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32341E13BD997400AACF1A /* AsyncSocket.m */; };
+		8A32342B13BD997400AACF1A /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32342013BD997400AACF1A /* ServerController.m */; };
+		8A32342C13BD997400AACF1A /* TBMessageBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32342213BD997400AACF1A /* TBMessageBroker.m */; };
+		8A32342D13BD997400AACF1A /* IKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32342613BD997400AACF1A /* IKMessage.m */; };
+		8A32342E13BD997400AACF1A /* ClientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32342913BD997400AACF1A /* ClientController.m */; };
+		8A32343013BD998600AACF1A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A32342F13BD998600AACF1A /* CFNetwork.framework */; };
 		8A5BC8EA13BD7FC000CB3911 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5BC8E913BD7FC000CB3911 /* UIKit.framework */; };
 		8A5BC8EC13BD7FC000CB3911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5BC8EB13BD7FC000CB3911 /* Foundation.framework */; };
 		8A5BC8EE13BD7FC000CB3911 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5BC8ED13BD7FC000CB3911 /* CoreGraphics.framework */; };
@@ -20,15 +26,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A32341D13BD997400AACF1A /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		8A32341E13BD997400AACF1A /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		8A32341F13BD997400AACF1A /* ServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerController.h; sourceTree = "<group>"; };
+		8A32342013BD997400AACF1A /* ServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerController.m; sourceTree = "<group>"; };
+		8A32342113BD997400AACF1A /* TBMessageBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMessageBroker.h; sourceTree = "<group>"; };
+		8A32342213BD997400AACF1A /* TBMessageBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMessageBroker.m; sourceTree = "<group>"; };
+		8A32342313BD997400AACF1A /* TBMessageBrokerProtocolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMessageBrokerProtocolDelegate.h; sourceTree = "<group>"; };
+		8A32342413BD997400AACF1A /* IKActionPassingProtocolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKActionPassingProtocolDelegate.h; sourceTree = "<group>"; };
+		8A32342513BD997400AACF1A /* IKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKMessage.h; sourceTree = "<group>"; };
+		8A32342613BD997400AACF1A /* IKMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKMessage.m; sourceTree = "<group>"; };
+		8A32342713BD997400AACF1A /* ClientControllerProtocolDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientControllerProtocolDelegate.h; sourceTree = "<group>"; };
+		8A32342813BD997400AACF1A /* ClientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientController.h; sourceTree = "<group>"; };
+		8A32342913BD997400AACF1A /* ClientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientController.m; sourceTree = "<group>"; };
+		8A32342F13BD998600AACF1A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8A5BC8E513BD7FC000CB3911 /* iKeyStrokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKeyStrokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5BC8E913BD7FC000CB3911 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A5BC8EB13BD7FC000CB3911 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A5BC8ED13BD7FC000CB3911 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8A5BC8F113BD7FC000CB3911 /* iKeyStrokes-Info.plist */ = {isa = PBXFileReference; path = "iKeyStrokes-Info.plist"; sourceTree = "<group>"; };
+		8A5BC8F113BD7FC000CB3911 /* iKeyStrokes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iKeyStrokes-Info.plist"; sourceTree = "<group>"; };
 		8A5BC8F313BD7FC000CB3911 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A5BC8F513BD7FC000CB3911 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A5BC8F713BD7FC000CB3911 /* iKeyStrokes-Prefix.pch */ = {isa = PBXFileReference; path = "iKeyStrokes-Prefix.pch"; sourceTree = "<group>"; };
-		8A5BC8F813BD7FC000CB3911 /* iKeyStrokesAppDelegate.h */ = {isa = PBXFileReference; path = iKeyStrokesAppDelegate.h; sourceTree = "<group>"; };
+		8A5BC8F713BD7FC000CB3911 /* iKeyStrokes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iKeyStrokes-Prefix.pch"; sourceTree = "<group>"; };
+		8A5BC8F813BD7FC000CB3911 /* iKeyStrokesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iKeyStrokesAppDelegate.h; sourceTree = "<group>"; };
 		8A5BC8F913BD7FC000CB3911 /* iKeyStrokesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iKeyStrokesAppDelegate.m; sourceTree = "<group>"; };
 		8A5BC8FC13BD7FC000CB3911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		8A5BC8FF13BD7FC000CB3911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -41,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A32343013BD998600AACF1A /* CFNetwork.framework in Frameworks */,
 				8A5BC8EA13BD7FC000CB3911 /* UIKit.framework in Frameworks */,
 				8A5BC8EC13BD7FC000CB3911 /* Foundation.framework in Frameworks */,
 				8A5BC8EE13BD7FC000CB3911 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +91,7 @@
 		8A5BC8E813BD7FC000CB3911 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A32342F13BD998600AACF1A /* CFNetwork.framework */,
 				8A5BC8E913BD7FC000CB3911 /* UIKit.framework */,
 				8A5BC8EB13BD7FC000CB3911 /* Foundation.framework */,
 				8A5BC8ED13BD7FC000CB3911 /* CoreGraphics.framework */,
@@ -86,6 +108,19 @@
 				8A5BC8FE13BD7FC000CB3911 /* MainStoryboard_iPad.storyboard */,
 				8A5BC90113BD7FC000CB3911 /* iKeyStrokesViewController.h */,
 				8A5BC90313BD7FC000CB3911 /* iKeyStrokesViewController.m */,
+				8A32341D13BD997400AACF1A /* AsyncSocket.h */,
+				8A32341E13BD997400AACF1A /* AsyncSocket.m */,
+				8A32341F13BD997400AACF1A /* ServerController.h */,
+				8A32342013BD997400AACF1A /* ServerController.m */,
+				8A32342113BD997400AACF1A /* TBMessageBroker.h */,
+				8A32342213BD997400AACF1A /* TBMessageBroker.m */,
+				8A32342313BD997400AACF1A /* TBMessageBrokerProtocolDelegate.h */,
+				8A32342413BD997400AACF1A /* IKActionPassingProtocolDelegate.h */,
+				8A32342513BD997400AACF1A /* IKMessage.h */,
+				8A32342613BD997400AACF1A /* IKMessage.m */,
+				8A32342713BD997400AACF1A /* ClientControllerProtocolDelegate.h */,
+				8A32342813BD997400AACF1A /* ClientController.h */,
+				8A32342913BD997400AACF1A /* ClientController.m */,
 				8A5BC8F013BD7FC000CB3911 /* Supporting Files */,
 			);
 			path = iKeyStrokes;
@@ -128,6 +163,7 @@
 		8A5BC8DC13BD7FC000CB3911 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = ChalmersTH;
 			};
 			buildConfigurationList = 8A5BC8DF13BD7FC000CB3911 /* Build configuration list for PBXProject "iKeyStrokes" */;
@@ -169,6 +205,11 @@
 				8A5BC8F613BD7FC000CB3911 /* main.m in Sources */,
 				8A5BC8FA13BD7FC000CB3911 /* iKeyStrokesAppDelegate.m in Sources */,
 				8A5BC90413BD7FC000CB3911 /* iKeyStrokesViewController.m in Sources */,
+				8A32342A13BD997400AACF1A /* AsyncSocket.m in Sources */,
+				8A32342B13BD997400AACF1A /* ServerController.m in Sources */,
+				8A32342C13BD997400AACF1A /* TBMessageBroker.m in Sources */,
+				8A32342D13BD997400AACF1A /* IKMessage.m in Sources */,
+				8A32342E13BD997400AACF1A /* ClientController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +248,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -233,7 +275,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -252,6 +295,7 @@
 		8A5BC90813BD7FC000CB3911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iKeyStrokes/iKeyStrokes-Prefix.pch";
 				INFOPLIST_FILE = "iKeyStrokes/iKeyStrokes-Info.plist";
@@ -263,6 +307,7 @@
 		8A5BC90913BD7FC000CB3911 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iKeyStrokes/iKeyStrokes-Prefix.pch";
 				INFOPLIST_FILE = "iKeyStrokes/iKeyStrokes-Info.plist";
@@ -290,6 +335,7 @@
 				8A5BC90913BD7FC000CB3911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
